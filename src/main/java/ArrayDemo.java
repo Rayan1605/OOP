@@ -20,9 +20,9 @@ public class ArrayDemo {
             System.out.println("In index " + i + " of the array contain the number " + array[i] + " \n");
         }
         int a = 10;
-        while (a>=10) {
+        do {
             try {
-                System.out.println("Please enter the index you would like to see");
+                System.out.println("Please enter the index you would like to see\n");
                 a = myinput.nextInt();
                 System.out.println(" The number that is contained in index " + a + " is " + array[a]);
             }catch (ArrayIndexOutOfBoundsException e ){
@@ -30,7 +30,7 @@ public class ArrayDemo {
                 System.out.println("Please write between the numbers 1-9\n");
             }
 
-        }
+        }while (a>=10);
 
 
     }
